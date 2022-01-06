@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {Text, View, TouchableOpacity, StyleSheet} from 'react-native';
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+
 // export type HeaderButtonProps = {
 //   text: string;
 //   textColor: string;
@@ -31,8 +33,22 @@ function SearchBar() {
           },
         }}
         renderLeftButton={() => (
-          <View>
+          <View style={{marginLeft: 10}}>
             <Ionicons name="location-sharp" size={24} />
+          </View>
+        )}
+        renderRightButton={() => (
+          <View
+            style={{
+              flexDirection: 'row',
+              marginRight: 8,
+              backgroundColor: 'white',
+              padding: 9,
+              alignItems: 'center',
+              borderRadius: 30,
+            }}>
+            <AntDesign name="clockcircle" size={11} style={{marginRight: 6}} />
+            <Text>Search</Text>
           </View>
         )}
       />
