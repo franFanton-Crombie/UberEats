@@ -7,3 +7,8 @@ const App: () => Node = () => {
 };
 
 export default App;
+
+// PAQUETES QUE IMPLEMENTA:
+
+// react-native-vector-icons
+// react-native-google-places-autocomplete
