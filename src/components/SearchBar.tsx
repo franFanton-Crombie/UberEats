@@ -1,16 +1,8 @@
-import React, {useState} from 'react';
-import {Text, View, TouchableOpacity, StyleSheet} from 'react-native';
+import React from 'react';
+import {Text, View, StyleSheet} from 'react-native';
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-
-// export type HeaderButtonProps = {
-//   text: string;
-//   textColor: string;
-//   backgroundText: string;
-//   activeTab: string;
-//   setActiveTab: () => void;
-// };
 
 function SearchBar() {
   return (
@@ -55,33 +47,6 @@ function SearchBar() {
     </View>
   );
 }
-
-// const HeaderButton: React.FC<HeaderButtonProps> = ({
-//   text,
-//   textColor,
-//   backgroundColor,
-//   activeTab,
-//   setActiveTab,
-// }) => {
-//   return (
-//     <View>
-//       <TouchableOpacity
-//         onPress={() => setActiveTab(text)}
-//         style={[
-//           styles.button,
-//           {backgroundColor: activeTab === text ? 'black' : 'white'},
-//         ]}>
-//         <Text
-//           style={[
-//             styles.text,
-//             {color: activeTab === text ? 'white' : 'black'},
-//           ]}>
-//           {text}
-//         </Text>
-//       </TouchableOpacity>
-//     </View>
-//   );
-// };
 
 export default SearchBar;
 
