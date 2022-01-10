@@ -42,6 +42,8 @@ export const localRestaurants = [
 ];
 
 function RestaurantItems(props) {
+  console.log('PROPS: ', props);
+
   return (
     <View>
       {props.restaurantData.map((restaurant, index) => (
