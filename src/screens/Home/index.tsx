@@ -45,8 +45,8 @@ const HomeScreen = () => {
         <HeaderTabs />
         <SearchBar />
       </View>
+      <Categories />
       <ScrollView showVerticalScrollIndicator={false}>
-        <Categories />
         <RestaurantItems restaurantData={localRestaurants} />
       </ScrollView>
     </SafeAreaView>
